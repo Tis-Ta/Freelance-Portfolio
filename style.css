@@ -130,7 +130,7 @@
     padding-block: 1.5em;
   }
 
-  /* @keyframes fadeIn {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -170,7 +170,7 @@
     100% {
       transform: translateX(0);
     }
-  } */
+  }
 }
 
 @layer base {
