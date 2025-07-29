@@ -71,7 +71,8 @@ header.addEventListener("animationend", () => {
 const hamburgerBtn = document.querySelector(".hamburger-btn");
 const navBar = document.querySelector(".nav-bar");
 
-hamburgerBtn.addEventListener("click", () => {
+hamburgerBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
   navBar.classList.toggle("hamburger-btn__open");
   hamburgerBtn.classList.toggle("active");
 
