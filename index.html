@@ -12,11 +12,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
-		<script src="js/index.js" async></script>
+		<script type="module" src="js/index.js" async></script>
 		<script src="js/lightbox.js" defer></script>
 		<script src="js/carousel.js" defer></script>
 		<title>Hudson Test</title>
 	</head>
+
 	<body>
 		<a href="#intro" class="skip-to-content">Skip to main content</a>
 		<header class="header" role="banner">
@@ -51,41 +52,41 @@
 			</div>
 		</header>
 
-		<section id="intro" class="section" aria-label="section">
-			<div class="hero-section-left-block">
-				<div class="flex left-block__flex">
+		<main class="main">
+			<section id="intro" class="section" aria-label="section">
+				<div class="hero-section-left-block">
+					<div class="flex left-block__flex">
 
-					<span class="hero-section__text left-text">Hello</span>
-					<h1 class="hero-section__heading left-heading">I'm Jonathan Doe a product designer based in Somewhere.</h1>
-					<div class="flex left-block__button-container">
-						<a href="#" class="main-btn hero-section--btn-top">More about me</a>
-						<a href="#" class="main-btn hero-section--btn-bottom">Get in touch</a>
-					</div>
-
-					<p class="hero-section__cv-text left-block__cv-text">Get my cv</p>
-				</div>
-			</div>
-
-			<div class="hero-section">
-				<div class="wrapper">
-					<div class="hero-section__block">
-
-						<div class="flex hero-section__inner-block">
-							<span class="hero-section__text">Hello</span>
-							<h1 class="hero-section__heading">I'm Jonathan Doe a product designer based in Somewhere.</h1>
+						<span class="hero-section__text left-text">Hello</span>
+						<h1 class="hero-section__heading left-heading">I'm Jonathan Doe a product designer based in Somewhere.</h1>
+						<div class="flex left-block__button-container">
 							<a href="#" class="main-btn hero-section--btn-top">More about me</a>
 							<a href="#" class="main-btn hero-section--btn-bottom">Get in touch</a>
 						</div>
 
-						<p class="hero-section__cv-text">Get my cv</p>
+						<p class="hero-section__cv-text left-block__cv-text">Get my cv</p>
 					</div>
 				</div>
-			</div>
-		</section>
 
-		<main class="main">
-			<div class="wrapper">
-				<section class="about-section section" id="about">
+				<div class="hero-section">
+					<div class="wrapper">
+						<div class="hero-section__block">
+
+							<div class="flex hero-section__inner-block">
+								<span class="hero-section__text">Hello</span>
+								<h1 class="hero-section__heading">I'm Jonathan Doe a product designer based in Somewhere.</h1>
+								<a href="#" class="main-btn hero-section--btn-top">More about me</a>
+								<a href="#" class="main-btn hero-section--btn-bottom">Get in touch</a>
+							</div>
+
+							<p class="hero-section__cv-text">Get my cv</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about-section section" id="about" data-animate="slide-up">
+				<div class="wrapper">
 
 					<div class="main-heading-container">
 						<h2 class="main-heading">About me.</h2>
@@ -165,10 +166,11 @@
 
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section id="works" class="works-section section" aria-label="section">
-
+			<section id="works" class="works-section section" aria-label="section" data-animate="fade-in">
+				<div class="wrapper">
 					<div class="main-heading-container">
 						<h2 class="main-heading works-section--heading">Selected works.</h2>
 					</div>
@@ -242,7 +244,7 @@
 						<button class="arrow-button arrow-right" tabindex="0" aria-label="Next image">&#10132;</button>
 					</div>
 
-					<div class="testimonials-area">
+					<div class="testimonials-area" data-animate="slide-left">
 						<h3 class="testimonials-heading">Hear it from My Happy Clients</h3>
 
 						<div aria-roledescription="interactive-carousel" aria-label="Testimonials" role="region" class="testimonials-carousel">
@@ -308,10 +310,10 @@
 							<button aria-label="Go to testimonial 4" class="dot" data-index="3"></button>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 
-			<aside class="statistics-aside" aria-label="statistics section">
+			<aside class="statistics-aside" aria-label="statistics section" data-animate="slide-right">
 				<div class="grid statistics-grid wrapper">
 
 					<div class="statistics-block">
@@ -342,7 +344,7 @@
 			</aside>
 		</main>
 
-		<footer class="footer section" id="contact">
+		<footer class="footer section" id="contact" data-animate="slide-up">
 			<div class="wrapper">
 
 				<div class="main-heading-container">
@@ -385,7 +387,7 @@
 						</ul>
 					</div>
 
-					<span class="footer-developer">Developed by <a href="#" aria-describedby="developer-info" class="footer-developer__link">Tista Web Dev</a></span>
+					<span class="footer-developer">Developed by <a href="https://www.algarvewebcraft.com" aria-describedby="developer-info" class="footer-developer__link">Algarve WebCraft</a></span>
 				</div>
 			</div>
 		</footer>
